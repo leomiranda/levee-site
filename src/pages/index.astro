@@ -1,24 +1,250 @@
 ---
-// Component Imports
-import Button from '../components/Button.astro';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+import LayoutDefault from '../layouts/LayoutDefault.astro';
+import shape1 from '../assets/images/shape-organic-degradee.svg';
+import photo1 from '../assets/images/home-photo-1.png';
+import shapeLeft from '../assets/images/shape-polygon-degradee-left.svg';
+import photo2 from '../assets/images/home-photo-2.jpg';
+import shapeRight from '../assets/images/shape-polygon-degradee-right.svg';
+import photo3 from '../assets/images/home-photo-3.jpg';
+import bullet from '../assets/images/bullet-purple.svg';
+import iconTarget from '../assets/images/icon-target.svg';
+import iconEye from '../assets/images/icon-eye.svg';
+import screen1 from '../assets/images/home-screen-1.png';
+import logosIntegration from '../assets/images/home-logos-integration.png';
+import photoResources1 from '../assets/images/home-photo-resources-1.jpg';
+import photoResources2 from '../assets/images/home-photo-resources-2.jpg';
+import photoResources3 from '../assets/images/home-photo-resources-3.jpg';
+import logoTestimonials1 from '../assets/images/home-logo-testimonials-1.png';
+import avatarTestimonials1 from '../assets/images/home-avatar-testimonials-1.png';
+import logoMcdonalds from '../assets/images/logos-mcdonalds.png';
+import logoFairfield from '../assets/images/logos-fairfield.png';
+import logoOxxo from '../assets/images/logos-oxxo.png';
+import logoCea from '../assets/images/logos-cea.png';
+import logoLoggi from '../assets/images/logos-loggi.png';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
-
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
+<LayoutDefault title="Levee">
+	<div class="bg-light-gray pt-32">
+		<!-- Home Hero -->
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 lg:grid-cols-2">
+				<div class="pb-24 pl-24">
+					<h1 class="mb-4">
+						Discover an easier way to <span class="l-text--gradient">find and hire</span> quality candidates
+					</h1>
+					<p>
+						When you understand what makes your company’s best talent shine, you can quickly
+						identify the candidates most likely to succeed. With Levee powering your recruitment
+						process, you will be confident that you’re making the right hire — every time.
+					</p>
+					<a href="#" class="l-btn--gradient mt-6">Request a Demo</a>
+				</div>
+				<div class="relative hidden lg:block overflow-hidden">
+					<img
+						src={shape1}
+						alt="Organic shape"
+						class="absolute animate-waving-hand hover:hue-rotate-15 xl:-top-16 2xl:-top-20"
+					/>
+					<img
+						src={photo1}
+						alt="A woman smiling"
+						class="absolute top-12 right-0 xl:top-4 2xl:right-16 2xl:top-8 animate-waving-hand hover:hue-rotate-15"
+					/>
+					<div
+						class="absolute flex gap-6 top-32 right-4 xl:right-8 xl:top-20 2xl:right-44 2xl:top-20"
+					>
+						<img src={bullet} alt="Bullet" class="animate-bounce hover:hue-rotate-15" />
+						<img src={bullet} alt="Bullet" class="animate-bounce hover:hue-rotate-15" />
+						<img src={bullet} alt="Bullet" class="animate-bounce hover:hue-rotate-15" />
+					</div>
+				</div>
+			</div>
 		</div>
-	</body>
-</html>
+
+		<!-- Home Banner -->
+		<div class="l-home__banner-container">
+			<div class="l-line__top--polygon"></div>
+			<div class="bg-light-red l-home__banner -mt-52">
+				<div class="container mx-auto px-4"></div>
+			</div>
+			<div class="l-line__bottom"></div>
+		</div>
+	</div>
+
+	<!-- Home Text -->
+	<div class="container mx-auto py-36 text-center lg:px-40 xl:px-80">
+		<h3 class="pb-8">Own your employee life cycle</h3>
+		<p>
+			A healthy employee life cycle means more high-performing talent and less turnover. Levee’s
+			intelligent recruiting software gives HR teams the tools they need to attract and recruit the
+			best candidates — because when you hire the right people, they are more likely to stay and
+			succeed.
+		</p>
+	</div>
+
+	<!-- Home 2 cols -->
+	<div class="container mx-auto px-4">
+		<div class="grid grid-cols-1 xl:grid-cols-2 my-20 mb-20">
+			<div class="flex align-middle justify-center mb-8 xl:justify-start">
+				<div class="relative">
+					<img src={shapeLeft} alt="Polygon shape" class="" />
+					<img src={photo2} alt="Monitor with graphics" class="absolute -top-20 left-10" />
+				</div>
+			</div>
+			<div class="text-center xl:text-left">
+				<div>
+					<img src={iconTarget} alt="Icon target" class="mx-auto mb-4" />
+					<h4 class="mb-4">Fill your talent pipeline using smart Recruitment Marketing</h4>
+					<p>
+						Our Recruitment Marketing strategies keep your talent pipeline full of qualified
+						candidates by using social networks and savvy messaging to entice the right people to
+						apply. With Levee’s “one-stop-shop” for candidate sourcing, you can lower your
+						recruitment costs by over 25% and decrease your time-to-hire by 50%.
+					</p>
+					<a href="#" class="l-btn mt-6">Explore Recruitment Marketing</a>
+				</div>
+			</div>
+		</div>
+		<div class="grid grid-cols-1 xl:grid-cols-2 my-20 mb-20">
+			<div class="text-center xl:text-left order-2 xl:order-1 xl:mt-20">
+				<div>
+					<img src={iconEye} alt="Icon target" class="mx-auto mb-4" />
+					<h4 class="mb-4">Fill your talent pipeline using smart Recruitment Marketing</h4>
+					<p>
+						Our Recruitment Marketing strategies keep your talent pipeline full of qualified
+						candidates by using social networks and savvy messaging to entice the right people to
+						apply. With Levee’s “one-stop-shop” for candidate sourcing, you can lower your
+						recruitment costs by over 25% and decrease your time-to-hire by 50%.
+					</p>
+					<a href="#" class="l-btn mt-6">Explore Talent Intelligence</a>
+				</div>
+			</div>
+			<div
+				class="flex align-middle mb-24 xl:mb-20 justify-center xl:justify-end order-1 xl:order-2"
+			>
+				<div class="relative">
+					<img src={shapeRight} alt="Polygon shape" class="" />
+					<img src={photo3} alt="Monitor with graphics" class="absolute -bottom-16 right-10" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Home light-gray triangle 2-cols -->
+	<div class="bg-light-gray my-36">
+		<div class="container relative mx-auto px-4 xl:l-bg__triangle--purple">
+			<div class="l-line__top"></div>
+			<h3 class="pt-32 px-20 xl:px-40 text-center">
+				Understand your talent pipeline with analytics dashboards
+			</h3>
+			<div class="grid grid-cols-1 xl:grid-cols-2 my-16">
+				<div class="mb-4">
+					<img src={screen1} alt="Monitor with graphics" class="mb-12 xl:mb-16 mx-auto xl:mx-0" />
+				</div>
+				<div class="flex align-middle justify-center mb-32 xl:mb-8 lg:mx-20 xl:mx-28">
+					<div class="m-auto text-center xl:text-left">
+						<p>
+							Levee’s customizable analytics dashboards give you perfect visibility of your
+							recruiting efforts. You will see exactly which candidate sourcing channels produce the
+							best results, whether it’s Instagram, TikTok or Indeed. You will also see which
+							candidate traits are the strongest predictors of success on the job.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="l-line__bottom"></div>
+		</div>
+	</div>
+
+	<!-- Home light-gray triangle 2-cols -->
+
+	<div class="container relative mx-auto px-4">
+		<div class="grid grid-cols-1 xl:grid-cols-2 my-8">
+			<div class="flex align-middle justify-center mb-32 xl:mb-8 lg:mx-20 xl:mx-28">
+				<div class="m-auto text-center xl:text-left">
+					<h4 class="mb-4">Unify your recruiting data with seamless integrations</h4>
+					<p>
+						Levee integrates with dozens of applicant tracking systems and human capital management
+						systems, so there is no need to change your current recruitment tools. Levee makes your
+						existing process faster and delivers better results.
+					</p>
+				</div>
+			</div>
+			<div class="mb-4">
+				<img src={logosIntegration} alt="Logo integration" class="mb-12 xl:mb-16 mx-auto xl:mx-0" />
+			</div>
+		</div>
+	</div>
+
+	<!-- Home  3-cols light-gray triangle -->
+
+	<div class="bg-light-gray py-24 xl:py-30 xl:l-bg_polygon">
+		<div class="container mx-auto px-4 xl:pt-64 text-center xl:l-bg__wavy--purple">
+			<h5 class="text-2xl text-orange font-bold mb-6">RESOURCES</h5>
+			<h3 class="mb-12">Drive results with data-driven HR</h3>
+			<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-8 text-left">
+				<div>
+					<a href="#">
+						<img src={photoResources1} alt="Monitor with graphics" class="w-full" />
+						<div class="block w-full h-7 mb-12 bg-gradient-to-r from-tangerine to-orange"></div>
+						<h4>Hiring high-performing talent starts by defining success</h4>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src={photoResources2} alt="Monitor with graphics" class="w-full" />
+						<div class="block w-full h-7 mb-12 bg-gradient-to-r from-g-4-left to-g-4-right"></div>
+						<h4>How data-driven recruiting creates a more inclusive workforce</h4>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src={photoResources3} alt="Monitor with graphics" class="w-full" />
+						<div class="block w-full h-7 mb-12 bg-gradient-to-r from-g-2-right to-g-2-left"></div>
+						<h4>Targeted recruitment is the key to a healthy employee life cycle</h4>
+					</a>
+				</div>
+			</div>
+			<a href="#" class="l-btn mx-auto mt-4">Get More Resources</a>
+		</div>
+	</div>
+
+	<!-- Home slide testimonials -->
+
+	<div class="py-24">
+		<div class="container mx-auto px-4 text-center">
+			<h5 class="text-2xl text-orange font-bold mb-12">TESTIMONIALS</h5>
+			<div class="w-6/12 mx-auto shadow-md px-12 py-10">
+				<img src={logoTestimonials1} alt="McDonald's logo" class="mx-auto mb-6" />
+				<p class="mb-8">
+					“Testimonial here lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.”
+				</p>
+				<p>Name, Title</p>
+				<p class="text-purple font-bold mb-8">Company</p>
+				<img src={avatarTestimonials1} alt="Avatar" class="mx-auto mb-10" />
+				<div class="w-4/12 mx-auto bg-marigold h-1.5">
+					<div class="bg-marigold brightness-75 h-1.5" style="width: 30%"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Home logos -->
+
+	<div class="bg-light-gray py-24 xl:py-36 l-bg__degradee--logos xl:l-bg_polygon--right">
+		<div class="container mx-auto px-4 xl:mt-16 text-center">
+			<h5 class="text-2xl text-white font-bold mb-6">TESTIMONIALS</h5>
+			<h4 class="mb-32">Our clients rely on us to find and hire quality candidates.</h4>
+			<div
+				class="flex items-center justify-around gap-16 flex-wrap flex-col md:flex-row md:justify-around 2xl:justify-between"
+			>
+				<img src={logoMcdonalds} alt="McDonald's logo" class="w-fit" />
+				<img src={logoFairfield} alt="Fairfield's logo" class="w-fit" />
+				<img src={logoOxxo} alt="Oxxo's logo" class="w-fit" />
+				<img src={logoCea} alt="C&A's logo" class="w-fit" />
+				<img src={logoLoggi} alt="Loggi's logo" class="w-fit" />
+			</div>
+		</div>
+	</div>
+</LayoutDefault>

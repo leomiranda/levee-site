@@ -1,0 +1,81 @@
+---
+import logo from '../../assets/images/logo-levee-footer.svg';
+import socialFacebook from '../../assets/images/icon-social-facebook.svg';
+import socialInstagram from '../../assets/images/icon-social-instagram.svg';
+import socialLinkedin from '../../assets/images/icon-social-linkedin.svg';
+---
+
+<div class="bg-levee py-24">
+	<div class="container relative mx-auto px-4 text-center">
+		<h3 class="text-white mb-6">Ready to see Levee in action?</h3>
+		<a href="#" class="l-btn--gradient mt-6">Request a Demo</a>
+		<div class="text-left text-white">
+			<img class="my-8 mx-auto md:mx-0" src={logo} alt="Levee logo" />
+			<div class="grid grid-cols-1 lg:grid-cols-2">
+				<div
+					class="px-16 md:px-0 mb-8 md:mb-0 flex items-top justify-around gap-8 flex-col md:flex-row md:justify-around 2xl:justify-between"
+				>
+					<ul>
+						<li class="mb-4 font-bold">Platform</li>
+						<li class="mb-4"><a href="#" class="hover:text-gray">Recruitment Marketing</a></li>
+						<li class="mb-4"><a href="#" class="hover:text-gray">Talent Intelligence</a></li>
+					</ul>
+					<ul>
+						<li class="mb-4 font-bold">Customers</li>
+						<li class="mb-4"><a href="#" class="hover:text-gray">Stories</a></li>
+					</ul>
+					<ul>
+						<li class="mb-4 font-bold">Resources</li>
+					</ul>
+					<ul>
+						<li class="mb-4 font-bold">Company</li>
+						<li class="mb-4"><a href="#" class="hover:text-gray">About</a></li>
+						<li class="mb-4"><a href="#" class="hover:text-gray">Careers</a></li>
+						<li class="mb-4"><a href="#" class="hover:text-gray">Terms of service</a></li>
+						<li class="mb-4"><a href="#" class="hover:text-gray">Privacy policy</a></li>
+						<li class="mb-4"><a href="#" class="hover:text-gray">Legal notice</a></li>
+					</ul>
+				</div>
+				<div class="px-16 xl:px-32">
+					<h5 class="mb-4 text-white">Sign up for our newsletter:</h5>
+					<label for="first-name" class="block mb-2">First Name</label>
+					<input
+						type="text"
+						name="first-name"
+						id="first-name"
+						autocomplete="given-name"
+						class="block w-full mb-4 bg-gray p-2 text-levee"
+					/>
+					<label for="last-name" class="block mb-2">Last Name</label>
+					<input
+						type="text"
+						name="last-name"
+						id="last-name"
+						autocomplete="given-name"
+						class="block w-full mb-4 bg-gray p-2 text-levee"
+					/>
+					<label for="email" class="block mb-2">Email</label>
+					<input
+						type="text"
+						name="email"
+						id="email"
+						autocomplete="given-name"
+						class="block w-full mb-4 bg-gray p-2 text-levee"
+					/>
+					<a href="#" class="l-btn--white mt-6">Subscribe</a>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="flex gap-8 mb-4 mt-8 md:mt-0">
+				<a href="#"><img class="" src={socialFacebook} alt="Facebook icon" /></a>
+				<a href="#"><img class="" src={socialInstagram} alt="Instagram icon" /></a>
+				<a href="#"><img class="" src={socialLinkedin} alt="Linkedin icon" /></a>
+			</div>
+			<div class="w-full border-b border-white flex justify-between text-white py-4">
+				<p>©2023 Levee. All rights reserved worldwide.</p>
+				<div>Language: English</div>
+			</div>
+		</div>
+	</div>
+</div>
