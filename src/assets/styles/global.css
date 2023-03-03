@@ -69,21 +69,33 @@
 		@apply relative mt-16 2xl:mt-32;
 	}
 	.l-line__top {
-		@apply content-[''] absolute block w-0 h-40 mx-auto border-2 border-orange -top-20 inset-x-2/4 z-10;
+		@apply content-[''] absolute block w-0 h-40 mx-auto border border-orange -top-20 inset-x-2/4 z-10;
 	}
 	.l-line__top--polygon {
-		@apply content-[''] absolute block w-0 h-40 mx-auto border-2 border-orange top-14 inset-x-2/4 z-10;
+		@apply content-[''] absolute block w-0 h-40 mx-auto border border-orange top-14 inset-x-2/4 z-10;
 	}
 	.l-line__bottom {
-		@apply content-[''] absolute block w-0 h-40 mx-auto border-2 border-orange -bottom-20 inset-x-2/4 z-10;
+		@apply content-[''] absolute block w-0 h-40 mx-auto border border-orange -bottom-20 inset-x-2/4 z-10;
 	}
 	.l-bg_polygon {
 		-webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
 		clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
 	}
 	.l-bg_polygon--right {
-		-webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
-		clip-path: ppolygon(0 0, 100% 30%, 100% 100%, 0 100%);
+		-webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 100% 100%);
+		clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+	}
+	.l-bg_polygon--down-right {
+		/* shape-outside: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%); */
+		background-image: url(../images/bg-polygon-bottom-right-light-gray.svg);
+		background-repeat: no-repeat;
+		background-position: center bottom;
+	}
+	.l-bg_polygon--down-left-line {
+		background-image: url(../images/bg-polygon-bottom-left-light-gray-line.svg);
+		background-repeat: no-repeat;
+		background-position: center bottom;
 	}
 	.l-bg__degradee--logos {
 		background: linear-gradient(92.51deg, #8054ff, #ff9898);

@@ -1,0 +1,185 @@
+---
+import LayoutDefault from '../layouts/LayoutDefault.astro';
+import photo1 from '../assets/images/platform-photo-1.jpg';
+import photo2 from '../assets/images/platform-photo-2.jpg';
+import photo3 from '../assets/images/platform-photo-3.jpg';
+import shapePhoto1 from '../assets/images/shape-polygon-degradee-left.svg';
+import shapePhoto3 from '../assets/images/shape-polygon-degradee-right.svg';
+import iconLamp from '../assets/images/icon-lamp.svg';
+import iconCheck from '../assets/images/icon-check.svg';
+import iconEye from '../assets/images/icon-eye.svg';
+---
+
+<LayoutDefault title="Levee">
+	<!-- Platform Hero -->
+	<div class="bg-light-gray py-24 lg:py-30 lg:l-bg_polygon--down-right lg:bg-transparent">
+		<div class="container mx-auto px-4 text-center">
+			<div class="grid grid-cols-1 lg:grid-cols-2 my-20 mb-20">
+				<div class="text-center lg:text-left order-2 lg:order-1 lg:mt-20">
+					<div class="mr-12">
+						<h2 class="mb-8">Recruitment Marketing</h2>
+						<p>
+							Strategic recruiting is the key to building a stronger workforce — and attracting the
+							right candidates is half the battle. Levee’s Recruitment Marketing platform makes it
+							easy to run highly effective marketing campaigns on social networks. Get your job
+							postings in front of the right people as quickly as possible, and motivate them to
+							apply.
+						</p>
+					</div>
+				</div>
+				<div
+					class="flex align-middle mb-24 xl:mb-20 justify-center xl:justify-center order-1 xl:order-2"
+				>
+					<div class="relative z-20">
+						<img src={shapePhoto1} alt="Polygon shape" class="" />
+						<img src={photo1} alt="Monitor with graphics" class="absolute -top-16 right-10" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- platform boxes -->
+
+	<div class="container relative mx-auto px-4 text-levee mb-40 mt-6">
+		<div class="l-line__top -top-40"></div>
+		<div class="flex items-center justify-between">
+			<div class="w-5/12 pl-8">
+				<p class="ml-4 border-[3px] border-white mb-6 font-bold">Consider this:</p>
+				<p class="p-4 border-[3px] border-orange mb-6">
+					Most HR professionals are not marketing experts — and shouldn’t need to be!
+				</p>
+				<p class="p-4 border-[3px] border-orange mb-6">
+					Automated recruitment marketing tools use automation to prioritize quantity over quality,
+					putting too much pressure on HR teams and hiring managers to screen masses of
+					applications.
+				</p>
+			</div>
+			<div><img src={iconLamp} alt="Icon lamp" /></div>
+			<div class="w-5/12 pr-8">
+				<p class="bg-sunshine p-20">
+					Levee’s Recruitment Marketing platform uses state-of-the-art marketing strategies to bring
+					the right candidates into your talent pipeline.
+				</p>
+			</div>
+		</div>
+
+		<div class="l-line__bottom -bottom-40"></div>
+	</div>
+
+	<div class="container mx-auto px-4 text-center py-12">
+		<h3>How it works</h3>
+	</div>
+
+	<div class="bg-light-gray py-20 mb-4">
+		<div class="container relative mx-auto px-4 flex items-center justify-between gap-32">
+			<div class="flex items-center gap-8">
+				<img src={iconCheck} alt="Icon check" />
+				<h4>Put your best foot forward with customized job postings and applications</h4>
+			</div>
+			<p class="w-full">
+				It’s a candidate’s market, which means that job seekers have many options and employers have
+				to compete harder than ever to find and recruit the best talent. Levee helps make your
+				company appealing to applicants, starting with the job posting and application.
+			</p>
+		</div>
+	</div>
+
+	<div class="bg-light-gray py-20 mb-4">
+		<div class="container relative mx-auto px-4 flex items-center justify-between gap-32">
+			<div class="flex items-center gap-8">
+				<img src={iconCheck} alt="Icon check" />
+				<h4>Reach the right candidates with targeted distribution and messaging</h4>
+			</div>
+			<p class="w-full">
+				Levee’s Recruitment Marketing platform gives you an edge in today’s talent market by
+				promoting your job opportunities using social networks and savvy messaging. We also engage
+				with candidates by text and chat, where they feel most comfortable, to reduce drop-out rates
+				and bring them to you faster.
+			</p>
+		</div>
+	</div>
+
+	<div class="bg-light-gray py-20 mb-4">
+		<div class="container relative mx-auto px-4 flex items-center justify-between gap-32">
+			<div class="flex items-center gap-8">
+				<img src={iconCheck} alt="Icon check" />
+				<h4>Drive results with advanced recruitment marketing strategies</h4>
+			</div>
+			<p class="w-full">
+				You don’t need a marketing background to tap into state-of-the-art recruitment marketing
+				tactics. Our platform enables you to run programmatic ads, retargeting campaigns and more to
+				ensure you’re staying front-of-mind with your ideal candidates.
+			</p>
+		</div>
+	</div>
+
+	<div class="bg-purple py-20 mb-4">
+		<div class="container relative mx-auto px-4 flex flex-col items-center justify-center gap-8">
+			<h2 class="text-white">Ready to see Levee in action?</h2>
+			<a href="#" class="l-btn--gradient mt-6">Request a Demo</a>
+		</div>
+	</div>
+
+	<!-- Benefits -->
+	<div class="container relative mx-auto px-4 text-center py-16 mt-56">
+		<div class="l-line__top -top-40"></div>
+		<h3>Benefits</h3>
+	</div>
+	<div class="container relative mx-auto px-4 mb-56">
+		<div class="grid grid-cols-1 xl:grid-cols-2 my-20 mb-20">
+			<div class="flex align-middle justify-center mb-8 xl:justify-start">
+				<div class="relative">
+					<img src={shapePhoto1} alt="Polygon shape" class="" />
+					<img src={photo2} alt="Monitor with graphics" class="absolute -top-20 left-10" />
+				</div>
+			</div>
+			<div class="text-center xl:text-left">
+				<div>
+					<h4 class="mb-4">Diversify your workforce</h4>
+					<p>
+						Levee’s Recruitment Marketing platform extends beyond traditional recruiting channels,
+						using social media platforms like TikTok and messaging apps like WhatsApp to expand your
+						reach and bring in more diverse candidates.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="grid grid-cols-1 xl:grid-cols-2 my-20 mb-20">
+			<div class="text-center xl:text-left order-2 xl:order-1 xl:mt-20">
+				<div>
+					<h4 class="mb-4">Connect recruiting analytics with your company’s business goals</h4>
+					<p>
+						HR has a direct impact on your company’s bottom line, but it can be hard to show the
+						connection. Not anymore! Levee puts success metrics at the center of all our talent
+						data, making it easier to show the ROI of your recruitment efforts.
+					</p>
+					<a href="#" class="l-btn mt-6">Explore Talent Intelligence</a>
+				</div>
+			</div>
+			<div
+				class="flex align-middle mb-24 xl:mb-20 justify-center xl:justify-end order-1 xl:order-2"
+			>
+				<div class="relative">
+					<img src={shapePhoto3} alt="Polygon shape" class="" />
+					<img src={photo3} alt="Monitor with graphics" class="absolute -bottom-16 right-10" />
+				</div>
+			</div>
+		</div>
+		<div class="l-line__bottom -bottom-60"></div>
+	</div>
+
+	<!-- Eye -->
+
+	<div class="bg-light-gray py-28 xl:l-bg_polygon -mt-16 xl:-mt-44">
+		<div class="container mx-auto max-w-5xl px-8 pt-8 xl:pt-40 text-center">
+			<img src={iconEye} alt="Icon eye" class="mx-auto mb-12 xl:mb-20" />
+			<h3 class="mb-12">Improve targeting with Talent Intelligence</h3>
+			<p>
+				The more you know about what makes your best talent thrive, the more targeted your
+				recruitment marketing can be. Learn how Levee’s Talent Intelligence platform can help.
+			</p>
+			<a href="#" class="l-btn mx-auto mt-12">Explore Talent Intelligence</a>
+		</div>
+	</div>
+</LayoutDefault>

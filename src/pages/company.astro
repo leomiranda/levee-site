@@ -1,0 +1,99 @@
+---
+import LayoutDefault from '../layouts/LayoutDefault.astro';
+import photo1 from '../assets/images/company-photo-1.jpg';
+import shapePhoto1 from '../assets/images/shape-polygon-degradee-right.svg';
+import photo2 from '../assets/images/company-photo-2.png';
+import shapePhoto2 from '../assets/images/shape-triangle-degradee-purple.svg';
+import photo3 from '../assets/images/company-photo-3.png';
+import shapePhoto3 from '../assets/images/shape-retangle-degradee-orange.svg';
+---
+
+<LayoutDefault title="Levee">
+	<!-- Platform Hero -->
+	<div class="bg-light-gray py-24 lg:py-30 lg:l-bg_polygon--down-left-line lg:bg-transparent">
+		<div class="container relative mx-auto px-4 text-center">
+			<div class="grid grid-cols-1 lg:grid-cols-2 my-8">
+				<div class="flex align-middle mb-24 justify-center lg:justify-center">
+					<div class="relative z-20 xl:mr-20">
+						<img src={shapePhoto1} alt="Polygon shape" class="" />
+						<img src={photo1} alt="Monitor with graphics" class="absolute -bottom-16 left-10" />
+					</div>
+				</div>
+				<div class="text-center lg:text-left">
+					<div>
+						<h5 class="text-2xl text-orange font-bold mb-4">COMPANY</h5>
+						<h2 class="mb-8">Levee finds the potential in everybody</h2>
+						<p>
+							We believe that all companies can build and maintain a high-performing workforce if
+							they understand what makes their talent thrive. So, we set out to empower HR teams to
+							unlock the potential in their talent pool — starting with a more intelligent
+							recruiting and hiring process.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 2 rows -->
+	<div class="container relative mx-auto px-4">
+		<div class="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 my-20">
+			<div class="text-center xl:text-left order-2 xl:order-1 xl:mt-20 2xl:col-span-2 mb-20">
+				<div>
+					<h3 class="mb-8 text-purple">New talent pool, new platforms</h3>
+					<p>
+						We built Levee from the ground up, starting in Latin America — home to the second
+						largest service workforce in the world. As we set out to connect job-seekers and
+						employers, we found there is a whole world of untapped talent using social networks and
+						messaging platforms to find job opportunities. Now, Levee uses technology to help hiring
+						companies everywhere understand what candidates are looking for, what they are capable
+						of and how to attract them.
+					</p>
+				</div>
+			</div>
+			<div
+				class="flex align-middle mb-24 xl:mb-20 justify-center xl:justify-end order-1 xl:order-2 pr-20"
+			>
+				<div class="relative">
+					<img src={shapePhoto2} alt="Polygon shape" class="" />
+					<img
+						src={photo2}
+						alt="Monitor with graphics"
+						class="absolute -bottom-16 -right-28 max-w-none"
+					/>
+				</div>
+			</div>
+		</div>
+		<div class="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 mt-20">
+			<div class="text-center xl:text-left order-2 xl:order-1 2xl:col-span-2">
+				<div class="">
+					<h3 class="mb-8 text-purple">The modern workforce is multifaceted and diverse</h3>
+					<p>
+						Traditional recruiting tools often miss the mark with today’s talent. We created Levee
+						to reveal the soft skills, personality traits, cultural values and life experiences that
+						actually matter in measuring a candidate’s potential. By enabling recruiters to see
+						beyond the resume to consider the whole person, we are building a more dynamic and
+						equitable job market.
+					</p>
+				</div>
+			</div>
+			<div
+				class="flex align-middle mb-24 xl:mb-20 justify-center xl:justify-end order-1 xl:order-2"
+			>
+				<div class="relative">
+					<img src={shapePhoto3} alt="Polygon shape" class="" />
+					<img
+						src={photo3}
+						alt="Monitor with graphics"
+						class="absolute -bottom-20 -right-16 max-w-none"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container mx-auto px-4 text-center py-20">
+		<h4>Does this sound like a mission you can get behind?</h4>
+		<a href="#" class="l-btn mx-auto mt-12">Explore Careers with Levee</a>
+	</div>
+</LayoutDefault>
